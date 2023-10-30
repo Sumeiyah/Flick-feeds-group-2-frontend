@@ -19,3 +19,9 @@ code {
 .text-underline-hover:hover {
   text-decoration: underline;
 }
+
+.img{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+}

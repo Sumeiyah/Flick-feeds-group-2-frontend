@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faBuilding } from "@fortawesome/free-solid-svg-icons";
@@ -21,16 +21,17 @@ function Footer() {
         <div class="container p-4">
           <div class="row mt-4">
             <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-4">About company</h5>
+              <h5 class="text-uppercase mb-4">About Us</h5>
+              <h4>
+                Our Vision
+              </h4>
 
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti.
+              <p style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>
+                We envision a world where movie lovers, from casual to die-hard cinephiles
+                can come together to explore, share and celebrate the wonderful world of cinema.
               </p>
-
-              <p>
-                Blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias.
+              <p style={{ fontFamily: "Copperplate, Papyrus, fantasy", fontSize: "23px" }}>
+                Join us to start your cinematic experience.
               </p>
 
               <div class="mt-4">
@@ -39,7 +40,7 @@ function Footer() {
                   href="#!"
                   role="button"
                 >
-                  <FontAwesomeIcon icon={faFacebook} beat />
+                  <FontAwesomeIcon icon={faYoutube} beat />
                 </a>
                 <a
                   className="btn btn-outline-light btn-floating m-4"
@@ -64,44 +65,45 @@ function Footer() {
                   <span class="fa-li">
                     <FontAwesomeIcon icon={faBuilding} />
                   </span>
-                  <span class="ms-2">New York, NY 10012, US</span>
+                  <span class="ms-2">City Square, 22170-00400, Nairobi</span>
                 </li>
                 <li class="mb-3">
                   <span class="fa-li">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </span>
-                  <span class="ms-2">info@example.com</span>
+                  <span class="ms-2">info@flickfeeds.com</span>
                 </li>
                 <li class="mb-3">
                   <span class="fa-li">
                     <FontAwesomeIcon icon={faPhoneFlip} />
                   </span>
-                  <span class="ms-2">+ 01 234 567 88</span>
+                  <span class="ms-2">+25444621050</span>
                 </li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-4 mt-5">
+              <ul class="list-unstyled mb-4 mt-5">
                 <li class="mb-4">
-              <a class="text-white text-underline-hover" href="#">
-                Privacy Policy
-              </a>
-              </li>
-              <li class="mb-4">
-              <a class="text-white text-underline-hover" href="#">
-                Terms of Use
-              </a>
-              </li>
-              <li class="mb-4">
-              <a class="text-white text-underline-hover" href="#">
-                Advertising
-              </a>
-              </li>
+                  <a class="text-white text-underline-hover" href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="text-white text-underline-hover" href="#">
+                    Terms of Use
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="text-white text-underline-hover" href="#">
+                    Help center
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="text-center p-3" style={Style1}>
+          All rights reserved.<br />
           © 2023 by FlickFeeds.com,Inc.
         </div>
       </footer>
