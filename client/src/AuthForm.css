@@ -1,0 +1,50 @@
+.auth-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .auth-popup h2 {
+    color: black;
+  }
+  
+  .auth-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .auth-popup input {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  .auth-popup button {
+    padding: 10px;
+    background: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-popup button.close-button {
+    background: black;
+  }
+  

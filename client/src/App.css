@@ -1,38 +1,77 @@
-.App {
+/* Navbar styles */
+.navbar {
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.navbar-brand.italic-bold.uppercase {
+  height: 20px;
+  width: 126px;
+  color: #ffffff;
+  font-family: "Josefin Sans-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+}
+
+/* Navigation items */
+.navbar-nav {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  padding-left: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Image section */
+.img-fluid {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+/* Text section */
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Background styles */
+.bg-image {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Label styles */
+.label {
+  height: 20px;
+  width: 126px;
+  color: #ffffff;
+  font-family: "Josefin Sans-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
 }
