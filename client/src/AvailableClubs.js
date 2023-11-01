@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { } from "react-router-dom";
+import ClubCard from "./ClubCard";
 
 function AvailableClubs() {
   const [clubs, setClubs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Simulate joining and leaving clubs for now
+  const joinClub = (clubID) => {
+    // Implement your join club logic here
+    console.log(`Joined club with ID: ${clubID}`);
+  };
+
+  const leaveClub = (clubID) => {
+    // Implement your leave club logic here
+    console.log(`Left club with ID: ${clubID}`);
+  };
 
   useEffect(() => {
     async function fetchClubs() {
@@ -13,16 +26,17 @@ function AvailableClubs() {
           throw new Error("Failed to fetch clubs");
         }
 
-        
         const parsedClubs = await response.json();
+        console.log(parsedClubs);
 
-        
-        setClubs(parsedClubs);
+        if (!Array.isArray(parsedClubs.clubs)) {
+          throw new Error("Clubs data is not an array");
+        }
+
+        setClubs(parsedClubs.clubs);
       } catch (error) {
-      
         setError(error);
       } finally {
-      
         setLoading(false);
       }
     }
@@ -41,11 +55,16 @@ function AvailableClubs() {
   return (
     <div>
       <h1>Available Clubs</h1>
-      <ul type="list">
+      <div className="club-list">
         {clubs.map((club) => (
-          <li key={club.ClubID}>{club.Name}</li>
+          <ClubCard
+            key={club.ClubID}
+            club={club}
+            onJoinClub={joinClub}
+            onLeaveClub={leaveClub}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ClubList from './ClubList'; 
+
 import UserProfileList from './UserProfileList'; 
 import ClubCreationForm from './ClubCreationForm'; 
-import backgroundImage from "./istockphoto-1419766496-170667a.webp"; 
+import backgroundImage from "./istockphoto-1419766496-170667a.webp";
+import AvailableClubs from './AvailableClubs';
+ 
 
 const navStyle = {
   backgroundColor: "black",
@@ -57,8 +59,8 @@ function App() {
           <Routes>
             <Route path="/" element={<div>Home Page Content</div>} />
             <Route path="/create-club" element={<ClubCreationForm />} />
-            <Route path="/clubs" element={<ClubList />} /> {/* New route for ClubList */}
-            <Route path="/profile" element={<UserProfileList />} /> {/* New route for UserProfileList */}
+            <Route path="/clubs" element={<AvailableClubs />} /> {/* New route for AvailableClubs */}
+            <Route path="/profile" element={<UserProfileList />} />
             <Route path="/logout" element={<div>Logout Page Content</div>} />
           </Routes>
         </div>
@@ -66,5 +68,7 @@ function App() {
     </Router>
   );
 }
+
+
 
 export default App;
