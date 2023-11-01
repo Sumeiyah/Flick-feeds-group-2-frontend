@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+
+/* Style the app container */
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation links */
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+/* Style links in the navigation bar */
+.nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+}
+/* App.css */
+
+/* Style the entire app container */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Style the header */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/* Style the navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Style the links in the navigation bar */
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+/* Style the content area */
+.content {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
