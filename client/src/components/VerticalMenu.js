@@ -1,5 +1,4 @@
-
-
+// Importing necessary hooks from react
 import React, { useState } from 'react';
 import './VerticalMenu.css';
 
@@ -11,6 +10,7 @@ function VerticalMenu() {
   };
 
   return (
+    // If menu is open or closed
     <div className={`vertical-menu ${isMenuOpen ? 'open' : ''}`}>
       <button className="menu-button" onClick={toggleMenu}>
         &#9776;
