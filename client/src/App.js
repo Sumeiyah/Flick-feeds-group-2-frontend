@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link ,Outlet} from "react-router-dom";
 import ClubList from './ClubList'; 
 import UserProfileList from './UserProfileList'; 
 import ClubCreationForm from './ClubCreationForm'; 
 import backgroundImage from "./istockphoto-1419766496-170667a.webp"; 
+import Profile from "./Components/Profile"; 
 
 const navStyle = {
   backgroundColor: "black",
@@ -29,8 +30,10 @@ const pageStyle = {
 };
 
 function App() {
+
   return (
-    <Router>
+ 
+    <>
       <div className="app" style={pageStyle}>
         <nav style={navStyle}>
           <div>
@@ -58,12 +61,13 @@ function App() {
             <Route path="/" element={<div>Home Page Content</div>} />
             <Route path="/create-club" element={<ClubCreationForm />} />
             <Route path="/clubs" element={<ClubList />} /> {/* New route for ClubList */}
-            <Route path="/profile" element={<UserProfileList />} /> {/* New route for UserProfileList */}
+            <Route path="/profile" element={<Profile />} /> {/* New route for UserProfileList */}
             <Route path="/logout" element={<div>Logout Page Content</div>} />
           </Routes>
         </div>
+        <Outlet/>
       </div>
-    </Router>
+    </>
   );
 }
 
