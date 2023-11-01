@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './Home.css';
+import VerticalMenu from './VerticalMenu';
 
 function Home() {
   return (
@@ -16,8 +17,8 @@ function Home() {
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
+              data-toggle="collapse" // Use "data-toggle" instead of "data-bs-toggle"
+              data-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -59,6 +60,8 @@ function Home() {
           </div>
         </nav>
       </div>
+
+      <VerticalMenu /> {/* Include the VerticalMenu component here */}
 
       {/* Image Section */}
       <div className="container">

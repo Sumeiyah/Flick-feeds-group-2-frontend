@@ -1,14 +1,9 @@
-/* Home.css */
-body {
-    background: rgb(90, 88, 88); /* Set the background color to grey */
-  }
-  
-
+/* VerticalMenu.css */
 .vertical-menu {
     position: fixed;
     top: 0;
     right: 0;
-    background: grey;
+    background: none;
     color: white;
     display: flex;
     flex-direction: column;
@@ -17,10 +12,15 @@ body {
     z-index: 999;
   }
   
+  .vertical-menu.open {
+    display: block;
+  }
+  
   .menu-popup {
     display: none;
     flex-direction: column;
     align-items: flex-end;
+    position: absolute; /* Add this line */
   }
   
   .menu-item {
@@ -38,7 +38,11 @@ body {
     font-size: 1.5rem;
   }
   
+  .menu-button:hover {
+    background: black;
+  }
+  
   .menu-button:hover + .menu-popup {
-    display: flex;
+    display: flex; /* Add this line */
   }
   
