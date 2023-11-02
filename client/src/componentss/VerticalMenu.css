@@ -1,0 +1,48 @@
+/* VerticalMenu.css */
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    z-index: 999;
+  }
+  
+  .vertical-menu.open {
+    display: block;
+  }
+  
+  .menu-popup {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute; /* Add this line */
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem 0;
+  }
+  
+  .menu-button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .menu-button:hover {
+    background: black;
+  }
+  
+  .menu-button:hover + .menu-popup {
+    display: flex; /* Add this line */
+  }
+  

@@ -1,0 +1,44 @@
+/* Home.css */
+body {
+    background: rgb(90, 88, 88); /* Set the background color to grey */
+  }
+  
+
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    z-index: 999;
+  }
+  
+  .menu-popup {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem 0;
+  }
+  
+  .menu-button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .menu-button:hover + .menu-popup {
+    display: flex;
+  }
+  
