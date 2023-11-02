@@ -1,12 +1,13 @@
 import './App.css';
-import Footer from './components/Footer'
-
+// import Footer from './components/Footer'
+import Comments from './components/Comments'
 
 function App() {
   return (
     <div>
- <Footer />
- </div>
+      {/* <Footer /> */}
+      <Comments />
+    </div>
   );
 }
 
