@@ -3,8 +3,8 @@ import '../indexS.css';
 function Signup(){
 
     return (
-        
-    <section className="signup-section">
+    //   nnnn  
+    <section className="signup-section"> 
         <section>
         <div className="login-box">
             <form action="">
